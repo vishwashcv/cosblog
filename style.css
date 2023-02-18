@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #222222;
+  width: 100vw;
+  animation: mymove 6s infinite;
+}
+
+@keyframes mymove {
+    0% {background-color: #222222;}
+    25% {background-color: #494949;}
+    75% {background-color: #000000;}
+    100% {background-color: #222222;}
+  }
+
+.logo {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 20px;
+  color: white;
+}
+
+.logo-with-name {
+  display: flex;
+  align-items: center;
+}
+
+.nav-options {
+  display: flex;
+}
+
+.nav-aboutus,
+.nav-contactus {
+  padding: 0 20px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 140%;
+  padding: 20px;
+}
+
+.trending-blogs {
+  font-size: 140%;
+  font-weight: 600;
+  padding: 2.8vh 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-h1 {
+  padding: 5px 10px;
+  width: 48vw;
+}
+
+.image-h {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  text-align: left;
+  font-size: 1.6vw;
+  width: 46vw;
+  padding: 1vw;
+  font-weight: 500;
+  bottom: 6.5vh;
+  left: 1vw;
+}
+
+.bottom-left-2 {
+  position: absolute;
+  text-align: left;
+  width: 46vw;
+  padding: 3vh 1vw;
+  font-size: 80%;
+  bottom: 1vh;
+  left: 1vw;
+}
+
+.trending-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-more{
+    padding: 6vh 2.2vw 2vh 2.2vw;
+    font-weight: 600;
+}
+
+
+.image-small{
+    width: 120px;
+    padding-right: 10px;
+}
+
+.blog-more{
+    display: flex;
+    align-items: center;
+    padding: 3vh 0vw;
+    width: 39vw;
+}
+
+.blog-more-main{
+    padding: 0 6vw;
+}
+
+.blog-head{
+    font-size: 110%;
+    padding: 5px;
+    width: 30vw;
+}
+
+.blog-sub{
+    font-size: 90%;
+    width: 30vw;
+    padding: 5px;
+    color: #797979;
+}
+
+.explore-blogs{
+    display: flex;
+
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+footer{
+    margin-top: 6vh;
+    background-color: #222222;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.line{
+    height: 1px;
+    border: 1px solid #494949;
+    width: 100vw;
+}
+
+.footer-options{
+    color: #949494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-option{
+    padding: 20px 20px;
+}
+
+.copyright{
+    padding: 20px;
+    color: #797979;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-of-content{
+  margin: 0 20vw;
+  font-size: 140%;
+}
+
+.heading{
+  font-size: 300%;
+  font-weight: 600;
+  padding: 60px 0;
+}
+
+.blog-part-logo{
+  padding: 3vw;
+}
+
+@media only screen and (max-width: 1100px){
+  .body-of-content{
+    margin: 0 10vw;
+    font-size: 100%;
+  }
+    .bottom-left{
+        font-size: 2vw;
+        bottom: 3.2vh;
+        padding: 1vh 1.8vw;
+    }
+    .bottom-left-2{
+        font-size: 1.2vw;
+        bottom: 1.5vh;
+        padding: 1vh 1.8vw;
+    }
+    .explore-blogs{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-more{
+        width: 88vw;
+    }
+    .blog-head{
+        width: 60vw;
+        font-size: 90%;
+    }
+
+    .blog-sub{
+        font-size: 70%;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-part-logo{
+    padding: 6vw;
+  }
+  .heading{
+    font-size: 180%;
+  }
+  h2{
+    font-size: 120%;
+  }
+  .logo-with-name {
+    font-size: 90%;
+  }
+
+  .nav-options {
+    font-size: 90%;
+  }
+
+  .welcome {
+    font-size: 110%;
+  }
+  .trending-blogs {
+    font-size: 110%;
+  }
+  .trending-images {
+    display: block;
+  }
+  .image-h1 {
+    padding: 0.8vh 0.8vw;
+    width: 96vw;
+  }
+  .image-h {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .explore-more{
+    padding: 6vh 4vw 2vh 4vw;
+    font-weight: 600;
+}
+
+
+  .bottom-left{
+    font-size: 140%;
+    bottom: 6.5vh;
+    width: 92vw;
+    left: 4vw;
+  }
+  .bottom-left-2{
+    font-size: 80%;
+    bottom: 1vh;
+    width: 92vw;
+    left: 4vw;
+    padding: 2vh 2vw;
+  }
+  .footer-option{
+    font-size: 80%;
+  }
+}
